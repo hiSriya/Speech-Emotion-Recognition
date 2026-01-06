@@ -1,12 +1,8 @@
 Model Training and Hyperparameter Tuning
 
-Sure — here’s a clean, submission-ready **GitHub README.md** you can paste directly.
-
----
-
 # Speech Emotion Recognition using RAVDESS 🎧
 
-This project implements a classical-ML Speech Emotion Recognition (SER) pipeline using features extracted from the RAVDESS dataset. It builds a reproducible workflow for feature extraction, dataset preparation, model training, evaluation, and comparison across SVM and Random Forest classifiers.
+This part implements a classical-ML Speech Emotion Recognition (SER) pipeline using features extracted from the RAVDESS dataset. It builds a reproducible workflow for feature extraction, dataset preparation, model training, evaluation, and comparison across SVM and Random Forest classifiers.
 
 ---
 
@@ -201,32 +197,3 @@ artifacts/
 ```
 
 ---
-
-## 📌 Future Extensions
-
-* Test-set evaluation and reporting
-* Class-wise per-emotion accuracy
-* Cross-dataset transfer evaluation
-* Deep learning comparison (CNN / CRNN)
-
----
-
-## 📝 License
-
-For academic and research use.
-
----
-
-## 🙌 Acknowledgement
-
-Dataset: Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)
-
----
-
-If you’d like, I can also:
-
-🟢 tailor this README for a course submission
-🟢 add diagrams / architecture block
-🟢 generate a results PDF summary
-
-Just tell me what style you want.
