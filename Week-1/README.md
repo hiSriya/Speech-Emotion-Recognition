@@ -1,8 +1,45 @@
-## Speech Emotion Recognition — Audio Feature Exploration
+## Speech Emotion Recognition🎧 — Audio Feature Exploration
 
 This notebook focuses on understanding the fundamental acoustic properties of the RAVDESS dataset and examining how different signal representations capture emotional characteristics in speech.
 
 ### 📌 Contents
+
+## 📂 Dataset
+
+**RAVDESS Emotional Speech Dataset**
+
+* 1440 audio samples
+* 8 emotion classes
+
+| Label | Emotion   |
+| ----- | --------- |
+| 1     | Neutral   |
+| 2     | Calm      |
+| 3     | Happy     |
+| 4     | Sad       |
+| 5     | Angry     |
+| 6     | Fearful   |
+| 7     | Disgust   |
+| 8     | Surprised |
+
+Dataset structure:
+
+```
+data/raw/RAVDESS/
+ ├── Actor_01/
+ ├── Actor_02/
+ ├── …
+```
+
+Each filename follows the format:
+
+```
+03-01-08-02-02-02-01.wav
+```
+
+The **3rd field** corresponds to the emotion ID.
+
+---
 
 #### 1. Audio Files and Their Properties
 
