@@ -1,1 +1,70 @@
 Data Exploration and Feauture Engineering
+## Statistical Analysis & Feature Discriminability Study
+
+This notebook performs data-level analysis on the extracted features from the RAVDESS dataset to understand emotional separability and feature importance trends.
+
+### 📌 Contents
+
+#### 1. Sampling Rate Estimation
+
+* Validates sampling consistency across all 1440 audio files
+* Confirms uniformity for downstream processing
+* Aligns with standard speech-processing library expectations
+
+#### 2. Emotion-wise Distribution Plots
+
+* Generates distribution visualizations for each emotion class
+* Supports:
+
+  * dataset balance validation
+  * comparative emotion spread analysis
+* Designed to remain extensible for future feature additions
+
+#### 3. Correlation Heatmap
+
+* Computes correlation among extracted features
+* Highlights:
+
+  * redundant attributes
+  * dependency relationships
+* Helps motivate later feature selection decisions
+
+#### 4. Top 5 Most Discriminative Features
+
+* Identifies features showing:
+
+  * strong inter-emotion separation
+  * high discriminative potential
+* Uses standard statistical criteria
+* Supports interpretability of model behavior
+
+#### 5. Visualization of Top Discriminative Features
+
+* Plots distributions of selected features
+* Provides visual insight into:
+
+  * which features separate emotions most clearly
+
+#### 6. Special Analysis: Happy vs Sad
+
+* Performs focused comparison between two emotions
+* Observes acoustic distinction patterns
+* Helps analyze:
+
+  * overlap regions
+  * separability limits
+
+---
+
+### 🎯 Purpose of This Notebook
+
+This notebook strengthens the project’s analytical backbone by:
+
+* validating dataset structure
+* studying statistical behavior of features
+* identifying discriminative emotional characteristics
+* supporting explainable ML design choices
+
+It forms the **analytical bridge** between feature extraction and classifier training.
+
+---
