@@ -5,11 +5,74 @@ This notebook performs data-level analysis on the extracted features from the RA
 
 ### 📌 Contents
 
+## 📂 Dataset
+
+**RAVDESS Emotional Speech Dataset**
+
+* 1440 audio samples
+* 8 emotion classes
+
+| Label | Emotion   |
+| ----- | --------- |
+| 1     | Neutral   |
+| 2     | Calm      |
+| 3     | Happy     |
+| 4     | Sad       |
+| 5     | Angry     |
+| 6     | Fearful   |
+| 7     | Disgust   |
+| 8     | Surprised |
+
+Dataset structure:
+
+```
+data/raw/RAVDESS/
+ ├── Actor_01/
+ ├── Actor_02/
+ ├── …
+```
+
+Each filename follows the format:
+
+```
+03-01-08-02-02-02-01.wav
+```
+
+The **3rd field** corresponds to the emotion ID.
+
+---
+
 #### 1. Sampling Rate Estimation
 
 * Validates sampling consistency across all 1440 audio files
 * Confirms uniformity for downstream processing
 * Aligns with standard speech-processing library expectations
+
+* 
+## 🎛️ Feature Extraction
+
+For each audio file, the following features were computed:
+
+* 13 MFCC coefficients
+* Δ MFCC (first-order derivatives)
+* ΔΔ MFCC (second-order derivatives)
+* Spectral centroid
+* Spectral roll-off
+* Zero-crossing rate
+
+To convert variable-length time-series to fixed-length vectors:
+
+* Mean and Standard Deviation were computed across the temporal axis
+* Resulting feature vector dimension: **81**
+
+All extracted features were stored in:
+
+```
+features.csv
+```
+
+---
+
 
 #### 2. Emotion-wise Distribution Plots
 
