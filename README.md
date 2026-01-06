@@ -1,10 +1,8 @@
-# Speech-Emotion-Recognition
+# Speech-Emotion-Recognition 🎧
 Build an end-to-end machine learning system that automatically detects and classifies emotional states (happiness, sadness, anger, fear, neutral, calm, disgust, surprise) from spoken audio using a combination of signal processing and data science techniques.
 
 
 ---
-## Speech Emotion Recognition
-
 This repository implements a modular Speech Emotion Recognition workflow using the RAVDESS dataset, covering:
 
 * audio feature understanding
@@ -13,6 +11,43 @@ This repository implements a modular Speech Emotion Recognition workflow using t
 * evaluation and comparison of classifiers
 
 The project follows a structured, incremental pipeline across three notebooks.
+
+---
+
+## 📂 Dataset
+
+**RAVDESS Emotional Speech Dataset**
+
+* 1440 audio samples
+* 8 emotion classes
+
+| Label | Emotion   |
+| ----- | --------- |
+| 1     | Neutral   |
+| 2     | Calm      |
+| 3     | Happy     |
+| 4     | Sad       |
+| 5     | Angry     |
+| 6     | Fearful   |
+| 7     | Disgust   |
+| 8     | Surprised |
+
+Dataset structure:
+
+```
+data/raw/RAVDESS/
+ ├── Actor_01/
+ ├── Actor_02/
+ ├── …
+```
+
+Each filename follows the format:
+
+```
+03-01-08-02-02-02-01.wav
+```
+
+The **3rd field** corresponds to the emotion ID.
 
 ---
 
