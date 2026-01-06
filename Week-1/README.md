@@ -1,75 +1,59 @@
-Getting started with Speech Emotion Recognition and installing necessary dataset and libraries
-
-Speech Emotion Recognition — Audio Feature Exploration
+## Speech Emotion Recognition — Audio Feature Exploration
 
 This notebook focuses on understanding the fundamental acoustic properties of the RAVDESS dataset and examining how different signal representations capture emotional characteristics in speech.
 
-📌 Contents
-1. Audio Files and Their Properties
+### 📌 Contents
 
-Loads sample audio files from the dataset
+#### 1. Audio Files and Their Properties
 
-Examines core metadata such as:
+* Loads sample audio files from the dataset
+* Examines core metadata such as:
 
-sampling rate
+  * sampling rate
+  * duration
+  * waveform structure
+* Provides grounding for later feature-engineering stages
 
-duration
+#### 2. MFCC Feature Understanding
 
-waveform structure
+* Explains the role of **Mel-Frequency Cepstral Coefficients (MFCCs)** in speech analysis
+* Highlights why MFCCs are suited for:
 
-Provides grounding for later feature-engineering stages
+  * speech recognition
+  * speaker characterization
+  * emotion-related spectral patterns
+* Notes processing order:
 
-2. MFCC Feature Understanding
+  * pre-emphasis
+  * framing
+  * windowing
+  * FFT
+  * Mel-filtering
 
-Explains the role of Mel-Frequency Cepstral Coefficients (MFCCs) in speech analysis
+#### 3. Spectrogram Analysis (Happy vs Sad)
 
-Highlights why MFCCs are suited for:
+* Visualizes spectrograms for:
 
-speech recognition
+  * A1
+  * A2
+  * A3 recordings
+* Compares emotional tone differences between:
 
-speaker characterization
+  * Happy
+  * Sad
+* Demonstrates time–frequency structure variations
 
-emotion-related spectral patterns
+---
 
-Notes processing order:
+### 🎯 Purpose of This Notebook
 
-pre-emphasis
+This notebook serves as the **exploratory foundation** for the project by:
 
-framing
-
-windowing
-
-FFT
-
-Mel-filtering
-
-3. Spectrogram Analysis (Happy vs Sad)
-
-Visualizes spectrograms for:
-
-A1
-
-A2
-
-A3 recordings
-
-Compares emotional tone differences between:
-
-Happy
-
-Sad
-
-Demonstrates time–frequency structure variations
-
-🎯 Purpose of This Notebook
-
-This notebook serves as the exploratory foundation for the project by:
-
-studying raw audio characteristics
-
-understanding feature behavior before modeling
-
-visually linking acoustic structures to emotions
+* studying raw audio characteristics
+* understanding feature behavior before modeling
+* visually linking acoustic structures to emotions
 
 It acts as a conceptual bridge between:
 audio signal analysis → feature extraction → machine learning.
+
+---
